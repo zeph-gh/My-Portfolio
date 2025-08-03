@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Zeph Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeph Goh | Full-Stack Developer</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/fb7e161b01.js"
       crossorigin="anonymous"
@@ -12,389 +18,490 @@
   </head>
 
   <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <i class="fa-solid fa-flip">
-            <img src="./assets/logo.png" class="logo" />
-          </i>
-          <ul id="sidemenu">
-            <li>
-              <a href="#header">
-                <span-gray>Home</span-gray>
-              </a>
-            </li>
-            <li>
-              <a href="#about">
-                <span-gray>About</span-gray>
-              </a>
-            </li>
-            <!-- <li>
-              <a href="#projects">
-                <span-gray>Projects</span-gray>
-              </a>
-            </li> -->
-            <li>
-              <a href="#portfolio">
-                <span-gray>Links</span-gray>
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                <span-gray>Contact</span-gray>
-              </a>
-            </li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <h3>Hi, my <span-green>name</span-green> is</h3>
-          <h1>
-            <i class="fa-solid fa-bounce">
-              <span-green>Zeph</span-green>
-            </i>
-            Goh Chee Man
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loader">
+        <div class="loader-inner"></div>
+        <div class="loader-text">LOADING</div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="./assets/logo.png" alt="Zeph Logo" />
+          <span>ZEPH</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link" data-text="Home">Home</a>
+          <a href="#about" class="nav-link" data-text="About">About</a>
+          <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+          <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="greeting fade-in">
+            <span class="wave">👋</span> Hello, I'm
+          </div>
+          <h1 class="hero-name">
+            <span class="name-highlight">Zeph</span> Goh Chee Man
           </h1>
-          <h2>Malaysian that interests in Tech.</h2>
-          <p>
-            A <span-green>tech enthusiastic</span-green> about continuous
-            learning and staying up-to-date with the latest technologies. I
-            enjoy developing products and solving problems. My goal is to be a
-            <span-green> Full-Stack Developer</span-green> and I am excited to
-            contribute to your success through my programming abilities.
+          <h2 class="hero-title">
+            <span class="typing-text"></span>
+          </h2>
+          <p class="hero-description">
+            A passionate
+            <span class="highlight">Full-Stack Developer</span> crafting
+            exceptional digital experiences with modern technologies. I love
+            turning complex problems into simple, beautiful solutions.
           </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Talk</span>
+              <i class="fas fa-comments"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- --------------------------about------------------ -->
-    <div id="about">
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
       <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./assets/profile.jpg" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">1.<span-green>About Me</span-green></h1>
-            <p>
-              Hello! My name is Zeph Goh Chee Man and I enjoy exploring the
-              beauty of technology. My interest in programming started back in
-              June 2023 when I decided to try self taught myself Python, and
-              eventually explore into the world of Web Development.
-            </p>
-            <br />
+        <div class="section-header">
+          <span class="section-number">01.</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('experience')">
-                Experience
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-description">
+              <p>
+                Hello! I'm Zeph, a passionate developer who loves creating
+                digital experiences that live at the intersection of design and
+                technology. My journey in programming began in June 2023 when I
+                decided to dive deep into Python, which eventually led me to
+                discover the fascinating world of web development.
               </p>
-              <!-- <p class="tab-links" onclick="opentab('built')">
-                Some Thing I've Built
-              </p> -->
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p>
+                Fast forward to today, I've had the privilege of working at
+                <span class="highlight">CloudExpo</span> as a Junior Software
+                Developer, where I've been building accessible, human-centered
+                products for a diverse range of clients.
+              </p>
+              <p>
+                Here are a few technologies I've been working with recently:
+              </p>
             </div>
 
-            <div class="tab-contents active-tab" id="experience">
-              <h3>
-                <span-green>Junior Software Developer</span-green>
-                @
-                <span-grey>CloudExpo</span-grey>
-              </h3>
-              <p>Jan 2024 - Now</p>
-
-              <ul>
-                <li>
-                  Developed and maintained web applications using React.js,
-                  Next.js, HTML/CSS, WordPress, Bootstrap CSS, and Tailwind CSS.
-                </li>
-                <li>
-                  Worked on backend development with Ruby On Rails and Postgres
-                  SQL.
-                </li>
-                <li>Deployed applications using Heroku or Netlify.</li>
-                <li>
-                  Discovered, evaluated, and implemented new technologies to
-                  maximize development efficiency.
-                </li>
-              </ul>
-
-              <br />
+            <div class="tech-grid">
+              <div class="tech-item">
+                <i class="fas fa-gem"></i>
+                <span>Ruby on Rails</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-wind"></i>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-react"></i>
+                <span>React.js</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-node-js"></i>
+                <span>Next.js</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-search"></i>
+                <span>React Query</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript (ES6+)</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-layer-group"></i>
+                <span>Redux</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+              </div>
             </div>
 
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>Sigma School</span><br />2023<br />Complete Software
-                  Development Program
-                </li>
-              </ul>
+            <div class="experience-tabs">
+              <div class="tab-list">
+                <button
+                  class="tab-button active"
+                  onclick="openTab('experience')"
+                >
+                  Experience
+                </button>
+                <button class="tab-button" onclick="openTab('education')">
+                  Education
+                </button>
+              </div>
+
+              <div class="tab-content active" id="experience">
+                <div class="experience-item">
+                  <h3>
+                    <span class="job-title">Junior Software Developer</span>
+                    <span class="company">@ CloudExpo</span>
+                  </h3>
+                  <p class="job-duration">January 2024 - Present</p>
+                  <ul class="job-responsibilities">
+                    <li>
+                      Developed and maintained web applications using React.js,
+                      Next.js, and modern CSS frameworks
+                    </li>
+                    <li>
+                      Built robust backend systems with Ruby on Rails and
+                      PostgreSQL
+                    </li>
+                    <li>
+                      Deployed applications using Heroku and Netlify with CI/CD
+                      pipelines
+                    </li>
+                    <li>
+                      Collaborated with cross-functional teams to deliver
+                      high-quality software solutions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tab-content" id="education">
+                <div class="experience-item">
+                  <h3>
+                    <span class="job-title"
+                      >Complete Software Development Program</span
+                    >
+                    <span class="company">@ Sigma School</span>
+                  </h3>
+                  <p class="job-duration">2023</p>
+                  <ul class="job-responsibilities">
+                    <li>Intensive full-stack development bootcamp</li>
+                    <li>Learned modern web technologies and best practices</li>
+                    <li>Built multiple real-world projects</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <div class="image-wrapper">
+              <img src="./assets/profile.jpg" alt="Zeph Profile" />
+              <div class="image-border"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- ---------------------Featured Project--------------------- -->
-    <div id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
       <div class="container">
-        <h1 class="sub-title">
-          2.<span-green>My Featured Projects</span-green>
-        </h1>
-        <div class="projects-list">
-          <div>
-            <i class="fa-solid fa-hotel fa-bounce"></i>
-            <h2>Hotel Booking App</h2>
-            <p>
-              A modern hotel booking platform built with React, Redux Toolkit,
-              and Firebase. Users can browse rooms, book stays, manage trips,
-              and update profiles. Admins manage rooms and bookings with
-              advanced controls.
-            </p>
-            <ul>
-              <li><strong>Features:</strong></li>
-              <li>Secure login/register</li>
-              <li>Browse & book rooms</li>
-              <li>Trip management</li>
-              <li>Profile image upload</li>
-              <li>Admin: manage rooms/bookings</li>
-            </ul>
-            <ul>
-              <li><strong>Tech Stack:</strong></li>
-              <li>React (Vite)</li>
-              <li>Redux Toolkit</li>
-              <li>Firebase</li>
-              <li>React Bootstrap</li>
-            </ul>
-            <a href="https://zeph-hotel-booking-app.vercel.app/" target="_blank"
-              >learn more</a
-            >
+        <div class="section-header">
+          <span class="section-number">02.</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://zeph-hotel-booking-app.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/zeph-gh/Hotel-Booking-App"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-hotel project-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Hotel Booking Platform</h3>
+              <p class="project-description">
+                A full-featured hotel booking application with user
+                authentication, room management, and admin controls. Built with
+                modern React patterns and Firebase backend.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <i class="fa-solid fa-bus fa-bounce"></i>
-            <h2>Bus Arrival App</h2>
-            <p>
-              An interactive web app for live bus arrival times, featuring
-              dynamic bus stop selection, searchable dropdowns, real-time data,
-              custom graphics, and engaging sound effects.
-            </p>
-            <ul>
-              <li><strong>Features:</strong></li>
-              <li>Dynamic bus stop selection loaded from bus_stops.json</li>
-              <li>Searchable bus stop dropdown (Choices.js integration)</li>
-              <li>Filter arrival times by bus number</li>
-              <li>
-                Visual display of up to three upcoming bus arrivals per service
-              </li>
-              <li>"Estimate Arrival Time" button to fetch live data</li>
-              <li>"Reset" button to clear results and input</li>
-              <li>Responsive UI with Bootstrap</li>
-              <li>Bus horn sound effect triggered by clicking the logo</li>
-              <li>Custom background and bus images</li>
-              <li>Handles API errors and missing data gracefully</li>
-            </ul>
-            <ul>
-              <li><strong>Tech Stack:</strong></li>
-              <li>JavaScript</li>
-              <li>Bootstrap</li>
-              <li>Choices.js</li>
-              <li>Custom graphics & sound</li>
-              <li>Bus Arrival APIs</li>
-            </ul>
-            <a href="https://zeph-bus-arrival-app.vercel.app/" target="_blank"
-              >learn more</a
-            >
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://zeph-bus-arrival-app.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/zeph-gh/Bus-Arrival-App"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-bus project-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Real-time Bus Tracker</h3>
+              <p class="project-description">
+                Interactive web app providing live bus arrival times with
+                dynamic search functionality, real-time data integration, and
+                engaging UI/UX.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">APIs</span>
+                <span class="tech-tag">Choices.js</span>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <i class="fa fa-twitter fa-bounce"></i>
-            <h2>Twitter App</h2>
-
-            <p>
-              This is a minimal Twitter-like app built with React and Vite. It
-              features authentication using Firebase, protected routes, and
-              basic posting functionality.
-            </p>
-            <ul>
-              <li><strong>Features:</strong></li>
-              <li>
-                Authentication: Users can log in and out using Firebase Auth.
-              </li>
-              <li>
-                Protected Routes: The /profile route is protected and only
-                accessible to authenticated users.
-              </li>
-              <li>
-                Post Creation: Users can create new posts and upload files.
-              </li>
-              <li>
-                Logout: Users can log out from the sidebar, which signs them out
-                and redirects to the login page.
-              </li>
-            </ul>
-            <ul>
-              <li><strong>Tech Stack:</strong></li>
-              <li>React</li>
-              <li>Vite</li>
-              <li>Firebase</li>
-              <li>Redux</li>
-              <li>React Bootstrap</li>
-            </ul>
-
-            <a href="http://zeph-twitter-app.vercel.app/" target="_blank"
-              >learn more</a
-            >
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="http://zeph-twitter-app.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/zeph-gh/Twitter-App"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fab fa-twitter project-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Social Media App</h3>
+              <p class="project-description">
+                Twitter-like social platform with authentication, protected
+                routes, post creation, and file upload capabilities. Clean,
+                responsive design.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Vite</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <a href="https://github.com/zeph-gh" target="_blank" class="btn"
-          >See more</a
-        >
+        <div class="projects-cta">
+          <a
+            href="https://github.com/zeph-gh"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <span>View All Projects</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- ------------------------portfolio---------------------------- -->
-    <div id="portfolio">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
       <div class="container">
-        <h1 class="sub-title">3.<span-green>My Links</span-green></h1>
-        <div class="links-list">
-          <div class="link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256">
-              <g
-                fill-rule="nonzero"
-                stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
-                style="mix-blend-mode: normal"
+        <div class="section-header">
+          <span class="section-number">03.</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-text">
+              <h3>Let's work together</h3>
+              <p>
+                I'm currently looking for new opportunities and exciting
+                projects. Whether you have a question or just want to say hi,
+                I'll try my best to get back to you!
+              </p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-content-text">
+                  <h4>Email</h4>
+                  <a href="mailto:xweeton@outlook.com">xweeton@outlook.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-content-text">
+                  <h4>Phone</h4>
+                  <a href="https://wa.me/+60166363228" target="_blank"
+                    >+6016-6363228</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-content-text">
+                  <h4>Location</h4>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/zeph-gh"
+                target="_blank"
+                class="social-link"
               >
-                <g transform="scale(5.12,5.12)">
-                  <path
-                    d="M9,4c-2.74952,0 -5,2.25048 -5,5v32c0,2.74952 2.25048,5 5,5h32c2.74952,0 5,-2.25048 5,-5v-32c0,-2.74952 -2.25048,-5 -5,-5zM9,6h32c1.66848,0 3,1.33152 3,3v32c0,1.66848 -1.33152,3 -3,3h-32c-1.66848,0 -3,-1.33152 -3,-3v-32c0,-1.66848 1.33152,-3 3,-3zM14,11.01172c-1.09522,0 -2.08078,0.32736 -2.81055,0.94141c-0.72977,0.61405 -1.17773,1.53139 -1.17773,2.51367c0,1.86718 1.61957,3.32281 3.67969,3.4668c0.0013,0.00065 0.0026,0.0013 0.00391,0.00195c0.09817,0.03346 0.20099,0.05126 0.30469,0.05273c2.27301,0 3.98828,-1.5922 3.98828,-3.52148c-0.00018,-0.01759 -0.00083,-0.03518 -0.00195,-0.05274c-0.10175,-1.90023 -1.79589,-3.40234 -3.98633,-3.40234zM14,12.98828c1.39223,0 1.94197,0.62176 2.00195,1.50391c-0.01215,0.85625 -0.54186,1.51953 -2.00195,1.51953c-1.38541,0 -2.01172,-0.70949 -2.01172,-1.54492c0,-0.41771 0.15242,-0.7325 0.47266,-1.00195c0.32023,-0.26945 0.83428,-0.47656 1.53906,-0.47656zM11,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-5.86523v-13.13477c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM20,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10c0,-0.82967 0.22639,-1.65497 0.625,-2.19531c0.39861,-0.54035 0.90147,-0.86463 1.85742,-0.84766c0.98574,0.01695 1.50758,0.35464 1.90234,0.88477c0.39477,0.53013 0.61523,1.32487 0.61523,2.1582v10c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10.73828c0,-2.96154 -0.87721,-5.30739 -2.38086,-6.89453c-1.50365,-1.58714 -3.59497,-2.36719 -5.80664,-2.36719c-2.10202,0 -3.70165,0.70489 -4.8125,1.42383v-0.42383c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM12,21h4v12.13477v4.86523h-4zM21,21h4v1.56055c0.00013,0.43 0.27511,0.81179 0.68291,0.94817c0.40781,0.13638 0.85714,-0.00319 1.11591,-0.34661c0,0 1.57037,-2.16211 5.01367,-2.16211c1.75333,0 3.25687,0.58258 4.35547,1.74219c1.0986,1.15961 1.83203,2.94607 1.83203,5.51953v9.73828h-4v-9c0,-1.16667 -0.27953,-2.37289 -1.00977,-3.35352c-0.73023,-0.98062 -1.9584,-1.66341 -3.47266,-1.68945c-1.52204,-0.02703 -2.77006,0.66996 -3.50195,1.66211c-0.73189,0.99215 -1.01562,2.21053 -1.01562,3.38086v9h-4z"
-                  ></path>
-                </g>
-              </g>
-            </svg>
-            <div class="layer">
-              <h3>LinkedIn</h3>
+                <i class="fab fa-github"></i>
+              </a>
               <a
                 href="https://www.linkedin.com/in/goh-chee-man/"
                 target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256">
-              <g
-                fill-rule="nonzero"
-                stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
-                style="mix-blend-mode: normal"
+                class="social-link"
               >
-                <g transform="scale(5.12,5.12)">
-                  <path
-                    d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z"
-                  ></path>
-                </g>
-              </g>
-            </svg>
-            <div class="layer">
-              <h3>GitHub</h3>
-              <a href="https://github.com/zeph-gh" target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="./assets/resume.pdf" target="_blank" class="social-link">
+                <i class="fas fa-file-alt"></i>
+              </a>
             </div>
+
+            <a href="./assets/resume.pdf" download class="btn btn-primary">
+              <span>Download Resume</span>
+              <i class="fas fa-download"></i>
+            </a>
           </div>
-          <div class="link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <div class="layer">
-              <h3>Resume</h3>
-              <a href="./assets/resume.pdf" target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ------------------------------contact---------------------------- -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <a href="mailto:xweeton@outlook.com" target="_blank"
-              ><i class="fas fa-paper-plane"></i> xweeton@outlook.com</a
-            >
-            <a href="https://wa.me/+60166363228" target="_blank"
-              ><i class="fas fa-phone-square-alt"></i> +6016-6363228</a
-            >
-            <div class="social-icons">
-              <a href="https://github.com/zeph-gh" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/goh-chee-man/"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-            <a href="./assets/resume.pdf" download class="btn btn2"
-              >Download Resume</a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" name="submit-to-google-sheet">
+              <div class="form-group">
+                <input type="text" name="Name" placeholder="" required />
+                <label>Full Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="Email" placeholder="" required />
+                <label>Email Address</label>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder=""
+                  required
+                ></textarea>
+                <label>Message</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
             </form>
-            <span id="msg"></span>
+            <span id="msg" class="form-message"></span>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright © Zeph. Made with<i class="fas fa-heart"></i></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 Zeph Goh. Designed & Built with
+            <i class="fas fa-heart"></i>
+          </p>
+          <div class="footer-links">
+            <a href="https://github.com/zeph-gh" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/goh-chee-man/" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
