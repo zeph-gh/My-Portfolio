@@ -15,9 +15,9 @@
     <div id="header">
       <div class="container">
         <nav>
-          <i class="fa-solid fa-flip"
-            ><img src="./assets/logo.png" class="logo"
-          /></i>
+          <i class="fa-solid fa-flip">
+            <img src="./assets/logo.png" class="logo" />
+          </i>
           <ul id="sidemenu">
             <li>
               <a href="#header">
@@ -83,13 +83,6 @@
               eventually explore into the world of Web Development.
             </p>
             <br />
-            <br />
-            <p>
-              Fast-forward to today, I've had the privilege of building several
-              projects, including a Hotel Booking App, Twitter Clone and
-              Instagram Clone.
-            </p>
-            <br />
 
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('experience')">
@@ -127,52 +120,7 @@
 
               <br />
             </div>
-            <!-- <div class="tab-contents" id="built">
-              <ul>
-                <li>
-                  <a
-                    href="https://47-hotel-booking-app.vercel.app/"
-                    target="_blank"
-                    ><span-green>Hotel Booking App</span-green></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://replit.com/@Zeph-Goh/38-Twitter-Clone-with-PostgreSQL"
-                    target="_blank"
-                    ><span-green>Twitter Clone</span-green></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://replit.com/@Zeph-Goh/213-Frontend-Assessment-Todo-App"
-                    target="_blank"
-                    ><span-green>Todo App</span-green></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://replit.com/@Zeph-Goh/212-Redux-Instagram-Clone"
-                    target="_blank"
-                    ><span-green>Instagram Clone</span-green></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://xweeton.github.io/24-Better-Bus-Arrival-App/"
-                    target="_blank"
-                    ><span-green>Bus Arrival App with APIs</span-green></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://xweeton.github.io/9.-Build-Airbnb-Clone-With-Tailwind-CSS/"
-                    target="_blank"
-                    ><span-green>Tailwind CSS Airbnb Clone</span-green></a
-                  >
-                </li>
-              </ul>
-            </div> -->
+
             <div class="tab-contents" id="education">
               <ul>
                 <li>
@@ -185,8 +133,9 @@
         </div>
       </div>
     </div>
+
     <!-- ---------------------Featured Project--------------------- -->
-    <!-- <div id="projects">
+    <div id="projects">
       <div class="container">
         <h1 class="sub-title">
           2.<span-green>My Featured Projects</span-green>
@@ -196,87 +145,114 @@
             <i class="fa-solid fa-hotel fa-bounce"></i>
             <h2>Hotel Booking App</h2>
             <p>
-              A Project is using<br />
-              Frontend => React.js and Bootstrap<br />
-              Backend => Firebase Auth, Bootstrap, Mailtrap, Express.js, and
-              PostgreSQL<br />
-              Deploy => Vercel
+              A modern hotel booking platform built with React, Redux Toolkit,
+              and Firebase. Users can browse rooms, book stays, manage trips,
+              and update profiles. Admins manage rooms and bookings with
+              advanced controls.
             </p>
-            <a href="https://47-hotel-booking-app.vercel.app/" target="_blank"
+            <ul>
+              <li><strong>Features:</strong></li>
+              <li>Secure login/register</li>
+              <li>Browse & book rooms</li>
+              <li>Trip management</li>
+              <li>Profile image upload</li>
+              <li>Admin: manage rooms/bookings</li>
+            </ul>
+            <ul>
+              <li><strong>Tech Stack:</strong></li>
+              <li>React (Vite)</li>
+              <li>Redux Toolkit</li>
+              <li>Firebase</li>
+              <li>React Bootstrap</li>
+            </ul>
+            <a href="https://zeph-hotel-booking-app.vercel.app/" target="_blank"
               >learn more</a
             >
           </div>
-          <div>
-            <i class="fa fa-twitter fa-bounce"></i>
-            <h2>Twitter Clone</h2>
-            <p>
-              A Project is using<br />
-              Frontend => React.js, Bootstrap, and Redux<br />
-              Backend => JSON Web Token, Restful APIs, Express.js, and
-              PostgreSQL
-            </p>
-            <a
-              href="https://replit.com/@Zeph-Goh/38-Twitter-Clone-with-PostgreSQL"
-              target="_blank"
-              >learn more</a
-            >
-          </div>
-          <div>
-            <i class="fa-solid fa-tasks fa-bounce"></i>
-            <h2>Todo App</h2>
-            <p>
-              A Project is using<br />
-              Frontend => React.js, React Google Chart, Bootstrap, and Redux
-            </p>
-            <a
-              href="https://replit.com/@Zeph-Goh/213-Frontend-Assessment-Todo-App"
-              target="_blank"
-              >learn more</a
-            >
-          </div>
-          <div>
-            <i class="fa fa-instagram fa-bounce"></i>
-            <h2>Instagram Clone</h2>
-            <p>
-              A Project is using<br />
-              Frontend => React.js, Bootstrap, and Redux
-            </p>
-            <a
-              href="https://replit.com/@Zeph-Goh/212-Redux-Instagram-Clone"
-              target="_blank"
-              >learn more</a
-            >
-          </div>
+
           <div>
             <i class="fa-solid fa-bus fa-bounce"></i>
-            <h2>Bus Arrival App with APIs</h2>
+            <h2>Bus Arrival App</h2>
             <p>
-              A Project is using<br />
-              Frontend => JavaScript and Bootstrap<br />
-              Backend => Bus Arrival APIs
+              An interactive web app for live bus arrival times, featuring
+              dynamic bus stop selection, searchable dropdowns, real-time data,
+              custom graphics, and engaging sound effects.
             </p>
-            <a
-              href="https://xweeton.github.io/20.-Bus-Arrival-API-App/"
-              target="_blank"
+            <ul>
+              <li><strong>Features:</strong></li>
+              <li>Dynamic bus stop selection loaded from bus_stops.json</li>
+              <li>Searchable bus stop dropdown (Choices.js integration)</li>
+              <li>Filter arrival times by bus number</li>
+              <li>
+                Visual display of up to three upcoming bus arrivals per service
+              </li>
+              <li>"Estimate Arrival Time" button to fetch live data</li>
+              <li>"Reset" button to clear results and input</li>
+              <li>Responsive UI with Bootstrap</li>
+              <li>Bus horn sound effect triggered by clicking the logo</li>
+              <li>Custom background and bus images</li>
+              <li>Handles API errors and missing data gracefully</li>
+            </ul>
+            <ul>
+              <li><strong>Tech Stack:</strong></li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Choices.js</li>
+              <li>Custom graphics & sound</li>
+              <li>Bus Arrival APIs</li>
+            </ul>
+            <a href="https://zeph-bus-arrival-app.vercel.app/" target="_blank"
               >learn more</a
             >
           </div>
+
           <div>
-            <i class="fa-brands fa-airbnb fa-bounce"></i>
-            <h2>Tailwind CSS Airbnb Clone</h2>
-            <p>A Airbnb Clone on learning HTML/TailwindCSS</p>
-            <a
-              href="https://xweeton.github.io/9.-Build-Airbnb-Clone-With-Tailwind-CSS/"
-              target="_blank"
+            <i class="fa fa-twitter fa-bounce"></i>
+            <h2>Twitter App</h2>
+
+            <p>
+              This is a minimal Twitter-like app built with React and Vite. It
+              features authentication using Firebase, protected routes, and
+              basic posting functionality.
+            </p>
+            <ul>
+              <li><strong>Features:</strong></li>
+              <li>
+                Authentication: Users can log in and out using Firebase Auth.
+              </li>
+              <li>
+                Protected Routes: The /profile route is protected and only
+                accessible to authenticated users.
+              </li>
+              <li>
+                Post Creation: Users can create new posts and upload files.
+              </li>
+              <li>
+                Logout: Users can log out from the sidebar, which signs them out
+                and redirects to the login page.
+              </li>
+            </ul>
+            <ul>
+              <li><strong>Tech Stack:</strong></li>
+              <li>React</li>
+              <li>Vite</li>
+              <li>Firebase</li>
+              <li>Redux</li>
+              <li>React Bootstrap</li>
+            </ul>
+
+            <a href="http://zeph-twitter-app.vercel.app/" target="_blank"
               >learn more</a
             >
           </div>
         </div>
-        <a href="https://github.com/xweeton" target="_blank" class="btn"
+
+        <a href="https://github.com/zeph-gh" target="_blank" class="btn"
           >See more</a
         >
       </div>
-    </div> -->
+    </div>
+
     <!-- ------------------------portfolio---------------------------- -->
     <div id="portfolio">
       <div class="container">
@@ -341,7 +317,7 @@
             </svg>
             <div class="layer">
               <h3>GitHub</h3>
-              <a href="https://github.com/xweeton" target="_blank"
+              <a href="https://github.com/zeph-gh" target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -382,7 +358,7 @@
               ><i class="fas fa-phone-square-alt"></i> +6016-6363228</a
             >
             <div class="social-icons">
-              <a href="https://github.com/xweeton" target="_blank"
+              <a href="https://github.com/zeph-gh" target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
               <a
